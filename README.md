@@ -2,4 +2,4 @@
 
 Visualize The Arbitrage Using WebBrowser.
 
-![IMAGE](arbitrage.png)
+![IMAGE](app.gif)
