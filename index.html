@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>kkent030315</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+    <link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/stylesheet.css" rel="stylesheet" type="text/css">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+    <script src="assets/js/ccxt-1.34.11.js"></script>
+
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+
+            <input type="button" id="kill_button" class="btn btn-primary mb16 w100 text-center" value="KILL"
+                onclick="kill_timer()">
+
+            <div class="column-style">
+                <div class="sector sector-main mr0">
+                    <h1>資産状況<p>ASSETS</p>
+                    </h1>
+
+                    <table class="mt12">
+                        <tbody id="asset_body">
+                            <!--<tr>
+                                <th>HuobiJP</th>
+                                <td>566,294</td>
+                                <td>12.34</td>
+                            </tr>-->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="column-style">
+                <div class="sector sector-markets">
+                    <h1>市場<p>MARKETS</p>
+                    </h1>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+                        </div>
+                        <input type="text" id="market_search" class="form-control" placeholder="Search">
+                    </div>
+
+                    <table class="mt12">
+                        <tbody id="market_body">
+                            <!--<tr>
+                                <th>HuobiJP</th>
+                                <td id="huobijp-ask" class="ask">0</td>
+                                <td id="huobijp-bid" class="bid">0</td>
+                            </tr>-->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="sector sector-main mr0">
+                    <h1>裁定取引情報<p>ARBITRAGE</p>
+                    </h1>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Amount</span>
+                        </div>
+                        <input type="number" id="order_amount" class="form-control" value="10"
+                            data-tippy-content="1度に注文する仮想通貨の量">
+                    </div>
+
+                    <table class="mt12">
+                        <tbody id="market_body">
+                            <tr>
+                                <th>売</th>
+                                <td id="best_bid_exchange">-</td>
+                            </tr>
+                            <tr>
+                                <th>買</th>
+                                <td id="best_ask_exchange">-</td>
+                            </tr>
+                            <tr>
+                                <th>スプレッド</th>
+                                <td id="spread">-</td>
+                            </tr>
+                            <tr>
+                                <th>予想損益(理論値／手数料非考慮)</th>
+                                <td id="profit">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+    <script>
+    tippy('[data-tippy-content]')
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+:root {
+    --bg-color: #f3f5fb;
+    --bg-sector-color: #fff;
+    --font-color: #202124;
+    --gray-font-color: #70757a;
+    --border-color: #dfe1e5;
+    --bg-gradient-color: #dedfe2;
+    --blue-color: #569cd6;
+    --primary-color: #7952b3;
+    --primary-color-op: rgba(121, 82, 179, .25);
+    --color-bid: #1D7FD9;
+    --color-ask: #E13734;
+    --color-bid-op: rgba(29, 127, 217, .25);
+    --color-ask-op: rgba(225, 55, 52, .25);
+    --color-less-op: rgba(155, 0, 0, 0.25);
+    --color-profit-op: rgba(0, 155, 0, 0.25);
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: var(--bg-color);
+}
+
+.main {
+    max-width: 1024px;
+    height: 100vh;
+    margin: auto;
+}
+
+.container {
+    box-sizing: content-box;
+    margin-top: 24px;
+    width: fit-content;
+    min-width: 720px;
+}
+
+.column-style {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-style {
+    display: flex;
+    flex-direction: column;
+}
+
+.centering {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.sector {
+    background: var(--bg-sector-color);
+    -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .12);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 0;
+    margin-right: 24px;
+}
+
+.sector-markets {
+    width: 30%;
+    min-width: max-content;
+}
+
+.sector-main {
+    width: -webkit-fill-available;
+    min-width: max-content;
+}
+
+h1 {
+    padding: 0em 0.5em;
+    color: #494949;
+    border-left: solid 4px var(--primary-color);
+    font-size: 24px;
+}
+
+h1 p {
+    font-size: 11px;
+}
+
+h2 {
+    padding: 0.25em 0.5em;
+    color: #494949;
+    border-left: solid 4px var(--primary-color);
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+}
+
+table>tbody>tr>th {
+    width: min-content!important;
+    padding-left: 16px!important;
+    color: var(--gray-font-color);
+    font-size: 12px;
+}
+
+table>tbody>tr>th,
+table>tbody>tr>td {
+    background-color: #f6f6f6;
+    padding: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: right;
+    font-weight: 400;
+}
+
+table>tbody>tr>td {
+    text-align: left;
+    background-color: transparent;
+    font-weight: lighter;
+}
+
+.sector-markets .mt12 {
+    margin-top: 12px;
+}
+
+.ask {
+    background-color: var(--color-ask-op)!important;
+}
+
+.bid {
+    background-color: var(--color-bid-op)!important;
+}
+
+.jpy {
+    background-color: var(--primary-color-op)!important;
+}
+
+.less {
+    background-color: var(--color-less-op)!important;
+}
+
+.profit {
+    background-color: var(--color-profit-op)!important;
+}
+
+@media screen and (max-width: 480px) {
+    .sector {
+        width: 100%;
+    }
+    .container {
+        box-sizing: border-box;
+        width: unset;
+        min-width: unset;
+    }
+    .row-style {
+        width: 100%;
+    }
+    .column-style {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.mr0 {
+    margin-right: 0;
+}
+
+.mb16 {
+    margin-bottom: 16px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w100 {
+    width: 100%;
+}
