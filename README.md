@@ -4,12 +4,14 @@
 
 https://commonsclause.com/
 
-# ArbitrageVisualizer
+### ✅ Available on [Heroku](https://arbitrage-visualizer.herokuapp.com/)
+
+# 👁️ ArbitrageVisualizer
 
 Visualize The Arbitrage Using WebBrowser.
 
 ![IMAGE](arbitrage.png)
 
-# Movie(LowQuality)
+# 🎥 Movie(LowQuality)
 
 ![IMAGE](app.gif)
